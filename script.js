@@ -9,24 +9,28 @@
 const bottone = document.querySelector('section>button');
 
 bottone.addEventListener('click', function(){
-    let kmtravel = document.querySelector('input');
-    console.log('CLICK',kmtravel.value);
+    const kmtravel = document.querySelector('#kmtravel');
+    const age = document.querySelector('#age');
+
+    // console.log('CLICK!!!',kmtravel.value, age.value);
     
+    const userDistance = kmtravel.value;
+    const userAge = age.value;
+    const priceCost = 0.267113;
+
+    let tripCost = userDistance * priceCost;
+    let userPrice
+
+    if(userAge < 21){
+        userPrice = (tripCost /100) * 24.552;
+    }else if(userAge > 63){
+        userPrice = (tripCost /100) * 37.893;
+    }else{
+        userPrice = tripCost;
+    }
+    document.getElementById('output').innerHTML= userPrice.toFixed(2);
+
 })
 
-const userDistance = kmtravel('write how many km you want to travel');
-const userAge = Age('type your Age');
-const priceCost = 0.267113;
-
-let tripCost = userDistance * priceCost;
-let userPrice
-
-if(userAge < 21){
-    userPrice = (tripCost /100) * 24.552;
-}else if (userAge > 63){
-    userPrice = (tripCost /100) * 37.893;
-}else{
-    userPrice = tripCost;
-}
 
 
