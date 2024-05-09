@@ -4,21 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaini&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <section class="form">
+    <main class="bg-flag">
+        <div class=" container d-flex justify-content-center align-middle align-items-center">
+            <div class="card m-5 border border-warning border-5 " style="width: 400px;">
+                <img src="https://www.pianetablunews.it/wp-content/uploads/2017/07/Cattura-8-300x200.png" class="card-img-top " alt="subway-wagon">
+                <div class="card-body">
+                    <h5 class="card-title">New York Subway</h5>
+                    <section class="form">
+                        <label for="kmtravel">write how many km you want to travel</label>
+                        <input class="mb-3 border border-success border-3 rounded-5" type="text" id="kmtravel" >
+                        <label class="d-block" for="age">type your Age</label>
+                        <input class=" border border-success border-3 rounded-5" type="text" id="age">
+                        <button class="btn btn-warning">Send</button>
+                    </section>
+                    <section class="price">
+                        <pre>your cost</pre>
+                        <pre class="text-danger" id="output"></pre>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+        <!-- <section class="form">
             <label for="kmtravel">write how many km you want to travel</label>
             <input type="text" id="kmtravel" >
             <label for="Age">type your Age</label>
             <input type="text" id="age">
             <button>Send</button>
-        </section>
-        <section class="price">
+        </section> -->
+        <!-- <section class="price">
             <pre>your cost</pre>
             <pre id="output"></pre>
-        </section>
+        </section> -->
     </main>
     <script type="text/javascript" src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

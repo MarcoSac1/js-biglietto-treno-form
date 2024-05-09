@@ -28,6 +28,8 @@ bottone.addEventListener('click', function(){
     }else{
         userPrice = tripCost;
     }
+
+    console.log(userPrice)
     document.getElementById('output').innerHTML= userPrice.toFixed(2);
 
 })
